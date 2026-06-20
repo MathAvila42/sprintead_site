@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sprint EaD — Pare de se perder. Comece a executar.</title>
+<meta name="description" content="O Sprint EaD transforma a grade curricular do seu curso em uma rotina estruturada de estudo, guiada por IA. Comece um teste grátis de 14 dias." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff6a1f'/%3E%3Cpath d='M18 5 8 17h7l-1.5 10L24 15h-7l1-10z' fill='%23fff'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar__inner">
+    <a href="#topo" class="logo" aria-label="Sprint EaD — início">
+      <span class="logo-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3 5 14h6l-1 7 9-11h-6l1-7z" fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round" /></svg>
+      </span>
+      <span class="logo-word">Sprint<span class="text-orange">EaD</span></span>
+    </a>
+    <nav class="navbar__links">
+      <a href="#problema">Problema</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#precos">Planos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="navbar__actions">
+      <a class="navbar__login" href="#">Entrar</a>
+      <button type="button" class="btn btn--primary" data-open-signup>
+        <span>Teste grátis</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="grid-paper hero__paper" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--a" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--b" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="grid-12 hero__grid">
+        <div class="col-7 hero__copy">
+          <div class="hero__tags">
+            <span class="tag tag--orange"><span class="pulse-dot"></span>Semestre 2026/1</span>
+            <span class="tag">PT-BR</span>
+          </div>
+
+          <h1 class="hero__title">Abra. Veja. Estude.</h1>
+
+          <p class="hero__lead">O Sprint EaD mostra <b>o que estudar em cada dia</b>, com base nas suas disciplinas e no tempo que você tem disponível.</p>
+
+          <div class="hero__cta">
+            <button type="button" class="btn btn--primary btn--lg" data-open-signup>
+              <span>Começar teste grátis</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+          </div>
+
+          <div class="hero__fineprint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            Cancele quando quiser
+          </div>
+        </div>
+
+        <div class="col-5 hero__preview-col">
+          <div class="preview">
+            <div class="preview-chip preview-chip--left">
+              <div class="preview-chip__label">IA · plano da semana</div>
+              <div class="preview-chip__value">Gerado em 8s</div>
+            </div>
+            <div class="preview-chip preview-chip--right preview-chip--dark">
+              <div class="preview-chip__label">Foco</div>
+              <div class="preview-chip__value">1 passo por vez</div>
+            </div>
+
+            <div class="preview-frame">
+              <div class="preview-frame__inner">
+                <img src="assets/dashboard.png" alt="Dashboard do Sprint EaD" />
+              </div>
+              <div class="preview-frame__dots">
+                <span></span><span></span><span class="is-orange"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-big">57%</div>
+          <div class="hero__stat-small">dos alunos EaD abandonam nos primeiros 6 meses</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-big">Menos de 5min</div>
+          <div class="hero__stat-small">tempo médio pra montar o plano semanal</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-big">0</div>
+          <div class="hero__stat-small">abas do LMS que você precisa abrir pra saber o que fazer hoje</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust">
+    <div class="trust__inner">
+      <div class="trust__label">Feito para graduação EaD</div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__group">
+            <span class="marquee__item">Universidades parceiras</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Pedagogia</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Administração</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Direito</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Engenharia de Produção</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Ciências Contábeis</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Psicologia</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Sistemas de Informação</span><span class="marquee__dot">◆</span>
+          </span>
+          <span class="marquee__group" aria-hidden="true">
+            <span class="marquee__item">Universidades parceiras</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Pedagogia</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Administração</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Direito</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Engenharia de Produção</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Ciências Contábeis</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Psicologia</span><span class="marquee__dot">◆</span>
+            <span class="marquee__item">Sistemas de Informação</span><span class="marquee__dot">◆</span>
+          </span>
+        </div>
+        <div class="marquee__fade marquee__fade--left"></div>
+        <div class="marquee__fade marquee__fade--right"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem" id="problema">
+    <div class="problem__inner">
+      <div class="grid-12 problem__grid">
+        <div class="col-5 problem__intro">
+          <span class="tag tag--dark">Problema</span>
+          <h2 class="problem__title">O EaD entrega o conteúdo.<br />A rotina fica por sua conta.</h2>
+          <p class="problem__lead">A plataforma de estudo funciona bem para <i>armazenar</i> as aulas, mas não ajuda a <b>organizar os seus estudos</b>. O Sprint EaD resolve exatamente isso — a camada de execução que falta entre o currículo e você.</p>
+        </div>
+
+        <div class="col-7 problem__cards">
+          <article class="pain-card">
+            <div class="pain-card__head">
+              <span class="pain-card__num">01</span>
+              <span class="tag tag--orange">Plano da disciplina → ???</span>
+            </div>
+            <h3 class="pain-card__title">Plano da disciplina que não vira rotina</h3>
+            <p class="pain-card__body">Você recebe o plano da disciplina, mas ele não guia o dia a dia. As semanas passam e você perde a sequência do conteúdo.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__head">
+              <span class="pain-card__num">02</span>
+              <span class="tag tag--orange">"o que estudar agora?"</span>
+            </div>
+            <h3 class="pain-card__title">Decisão todo dia</h3>
+            <p class="pain-card__body">Você abre a plataforma de estudo e precisa escolher por onde começar. Isso se repete todos os dias e atrasa o início dos estudos.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__head">
+              <span class="pain-card__num">03</span>
+              <span class="tag tag--orange">calendário fantasma</span>
+            </div>
+            <h3 class="pain-card__title">Prazo é surpresa</h3>
+            <p class="pain-card__body">As avaliações estão na plataforma, mas não fazem parte da sua rotina. Quando percebe, o prazo está próximo.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__head">
+              <span class="pain-card__num">04</span>
+              <span class="tag tag--orange">57% desistem</span>
+            </div>
+            <h3 class="pain-card__title">Falta acompanhamento</h3>
+            <p class="pain-card__body">No presencial, há interação constante. Na EaD, é fácil ficar dias sem estudar e não perceber o impacto.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="how__inner">
+      <div class="how__head">
+        <span class="tag tag--dark">Como funciona</span>
+        <h2 class="how__title">Currículo entra,<br />rotina sai.</h2>
+      </div>
+
+      <div class="how__timeline">
+        <div class="how__rule" aria-hidden="true"></div>
+        <div class="grid-12 how__steps">
+          <div class="col-4 how-step">
+            <div class="how-step__head">
+              <span class="how-step__circle">01</span>
+              <span class="how-step__label">Cadastro</span>
+            </div>
+            <h3 class="how-step__title">Cadastro</h3>
+            <p class="how-step__body">O aluno faz o cadastro e informa curso, universidade, disciplinas, módulos e avaliações. Caso não saiba alguma informação, pode cadastrar depois e mesmo assim gerar o plano.</p>
+            <div class="how-step__sample">
+              <div class="mono-line is-mute">// detectado</div>
+              <div class="mono-line">6 disciplinas · 39 módulos</div>
+              <div class="mono-line">3 avaliações · 2 TCCs</div>
+              <div class="mono-line is-orange">✓ plano gerável</div>
+            </div>
+          </div>
+
+          <div class="col-4 how-step">
+            <div class="how-step__head">
+              <span class="how-step__circle">02</span>
+              <span class="how-step__label">Plano</span>
+            </div>
+            <h3 class="how-step__title">IA monta sua semana</h3>
+            <p class="how-step__body">Você diz quanto tempo por dia pode estudar. O Sprint distribui os módulos, respeita prazos e deixa folga para revisão.</p>
+            <div class="how-step__sample how-step__sample--plan">
+              <div class="plan-row"><span class="is-mute">01</span><span>SEG · 45min · Comunic. M4</span></div>
+              <div class="plan-row"><span class="is-mute">02</span><span>TER · 45min · Filos. M3</span></div>
+              <div class="plan-row"><span class="is-mute">03</span><span>QUA · DESCANSO</span></div>
+              <div class="plan-row"><span class="is-mute">04</span><span>QUI · 60min · AP1 review</span></div>
+              <div class="plan-row"><span class="is-mute">05</span><span>SEX · 45min · Didática M2</span></div>
+            </div>
+          </div>
+
+          <div class="col-4 how-step">
+            <div class="how-step__head">
+              <span class="how-step__circle">03</span>
+              <span class="how-step__label">Execução</span>
+            </div>
+            <h3 class="how-step__title">Você só executa</h3>
+            <p class="how-step__body">Abre o app, vê UMA coisa pra estudar hoje. Marca concluído. Streak. Próximo. Sem decisões.</p>
+            <div class="how-step__sample">
+              <div class="mono-line is-mute" style="margin-bottom:8px">AGORA</div>
+              <div class="now-card">
+                <div class="now-card__meta">MÓDULO 4 · 45MIN</div>
+                <div class="now-card__title">Comunicação e Linguagem</div>
+                <div class="now-card__btn">Começar ▶</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ GANHA -->
+  <section class="features" id="recursos">
+    <div class="features__inner">
+      <div class="features__intro">
+        <span class="tag tag--dark">O que você ganha</span>
+        <h2 class="features__title">Tudo que a plataforma de conteúdo não resolve.</h2>
+        <p class="features__lead">O Sprint EaD não substitui a plataforma de estudo. Ele organiza como você usa o conteúdo ao longo do semestre — em uma tela, com uma resposta clara: <b>o que estudar agora</b>.</p>
+      </div>
+
+      <div class="features__hero">
+        <div class="grid-paper grid-paper--dark features__hero-paper" aria-hidden="true"></div>
+        <div class="features__hero-orb" aria-hidden="true"></div>
+
+        <div class="grid-12 features__hero-grid">
+          <div class="col-5 features__hero-copy">
+            <span class="tag">Tela "Hoje"</span>
+            <h3 class="features__hero-title">Uma tela.<br /><span class="text-orange">Uma resposta:</span><br />o que estudar agora.</h3>
+            <p class="features__hero-text">Acabou a paralisia de abrir 8 abas. A tela "Hoje" consolida módulo ativo, progresso no semestre, plano da IA e alertas de atraso. Você não abre mais nada.</p>
+            <ul class="features__hero-list">
+              <li><span class="check-bullet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Módulo ativo com 1 clique pra começar</li>
+              <li><span class="check-bullet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Barra de progresso real do semestre</li>
+              <li><span class="check-bullet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Plano semanal da IA, editável</li>
+              <li><span class="check-bullet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Alerta honesto de atraso (sem pânico)</li>
+              <li><span class="check-bullet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Prazos claros das avaliações</li>
+            </ul>
+          </div>
+          <div class="col-7 features__hero-media">
+            <div class="features__hero-frame">
+              <img src="assets/dashboard.png" alt="Sprint EaD dashboard" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="pricing" id="precos">
+    <div class="pricing__inner">
+      <div class="pricing__intro">
+        <span class="tag tag--dark">Planos e valores</span>
+        <h2 class="pricing__title">Escolha como quer estudar.</h2>
+        <p class="pricing__lead">Comece com 14 dias grátis em qualquer plano. Sem cartão, cancele quando quiser.</p>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="price-card">
+          <h3 class="price-card__name">Básico</h3>
+          <p class="price-card__pitch">Pra testar o hábito.</p>
+          <div class="price-card__price"><span class="price-card__currency">R$</span><span class="price-card__amount">9</span><span class="price-card__period">/mês</span></div>
+          <ul class="price-card__features">
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Um plano semanal por IA sem ajustes</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>3 disciplinas</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Streak e progresso</li>
+          </ul>
+          <button type="button" class="btn btn--block btn--dark" data-open-signup>Começar agora <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+        </article>
+
+        <article class="price-card price-card--highlight">
+          <div class="price-card__badge">Mais escolhido</div>
+          <h3 class="price-card__name">Padrão</h3>
+          <p class="price-card__pitch">Pra levar o semestre inteiro.</p>
+          <div class="price-card__price"><span class="price-card__currency">R$</span><span class="price-card__amount">19</span><span class="price-card__period">/mês</span></div>
+          <ul class="price-card__features">
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Tudo do Básico</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Plano da IA (semanal)</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Recuperação automática</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Alertas de prazo por AP</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Até 2 semestres ativos</li>
+          </ul>
+          <button type="button" class="btn btn--block btn--primary" data-open-signup>Começar teste grátis <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+        </article>
+
+        <article class="price-card">
+          <h3 class="price-card__name">Premium</h3>
+          <p class="price-card__pitch">Pra quem não pode reprovar.</p>
+          <div class="price-card__price"><span class="price-card__currency">R$</span><span class="price-card__amount">29</span><span class="price-card__period">/mês</span></div>
+          <ul class="price-card__features">
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Tudo do Padrão</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>IA com reajuste diário</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Tutor-IA por disciplina</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Revisão pré-prova guiada</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Semestres ilimitados</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Suporte prioritário</li>
+          </ul>
+          <button type="button" class="btn btn--block btn--dark" data-open-signup>Começar teste grátis <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+        </article>
+      </div>
+
+      <p class="pricing__note">Instituição de ensino? <a href="#">Fale com a gente</a> para plano institucional.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <span class="tag tag--dark">FAQ</span>
+        <h2 class="faq__title">Perguntas honestas,<br />respostas honestas.</h2>
+      </div>
+
+      <div class="faq__list">
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">01</span>
+            <h3 class="faq-item__q">Sprint substitui o Moodle / AVA / Canvas da minha faculdade?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">Não. Sprint EaD é a camada de execução que organiza o que o LMS já contém. Você continua entregando atividades, assistindo aulas e fazendo prova no ambiente da sua instituição — o Sprint só te diz o que fazer, quando, e mantém o ritmo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">02</span>
+            <h3 class="faq-item__q">Como vocês pegam o conteúdo da minha grade?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">Você cola o PDF das ementas (ou tira print). A IA extrai módulos, avaliações, pesos e datas. Leva uns 15 a 20 minutos na primeira vez e depois é automático a cada semestre.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">03</span>
+            <h3 class="faq-item__q">E se eu perder a semana?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">A IA reorganiza o plano na segunda de manhã, redistribuindo o atraso sem te sobrecarregar. Você não começa do zero nem "fica devendo" pra sempre — ela só recalcula.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">04</span>
+            <h3 class="faq-item__q">Funciona pra qualquer curso de graduação EaD?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">Sim. Qualquer graduação com módulos, avaliações e prazos definidos. Já rodou em Pedagogia, Administração, Direito, Engenharia de Produção e Psicologia no beta.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">05</span>
+            <h3 class="faq-item__q">Meus dados ficam expostos pra coordenação da faculdade?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">Só se você estudar por uma conta institucional (plano B2B contratado pela sua instituição). Contas pessoais são privadas — nem a coordenação nem ninguém além de você enxerga nada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>
+            <span class="faq-item__num">06</span>
+            <h3 class="faq-item__q">Posso cancelar o teste antes de ser cobrado?</h3>
+            <span class="faq-item__chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+          </summary>
+          <p class="faq-item__a">Pode, a qualquer momento, sem ligar pra ninguém. Não pedimos cartão pros 14 dias grátis, então não tem nem o que cancelar — a assinatura só começa se você optar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta">
+    <div class="grid-paper grid-paper--dark final-cta__paper" aria-hidden="true"></div>
+    <div class="final-cta__inner">
+      <span class="tag tag--dark final-cta__tag"><span class="pulse-dot pulse-dot--white"></span>Beta aberto</span>
+      <h2 class="final-cta__title">Seu semestre<br />começa segunda.<br /><span class="final-cta__mono">— você já tem plano?</span></h2>
+      <div class="final-cta__actions">
+        <button type="button" class="btn btn--ink" data-open-signup>
+          Começar teste grátis
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+      </div>
+      <p class="final-cta__fineprint">14 dias grátis · sem cartão · cancele no clique</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="grid-12 footer__grid">
+      <div class="col-5 footer__brand">
+        <span class="logo">
+          <span class="logo-mark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3 5 14h6l-1 7 9-11h-6l1-7z" fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round" /></svg>
+          </span>
+          <span class="logo-word logo-word--dark">Sprint<span class="text-orange">EaD</span></span>
+        </span>
+        <p class="footer__tagline">A camada de execução do seu EaD. Transforma ementa em rotina semanal guiada por IA.</p>
+      </div>
+
+      <div class="col-2 footer__col">
+        <div class="footer__col-title">Produto</div>
+        <ul>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Mudanças</a></li>
+        </ul>
+      </div>
+      <div class="col-2 footer__col">
+        <div class="footer__col-title">Institucional</div>
+        <ul>
+          <li><a href="#">Para coordenadores</a></li>
+          <li><a href="#">Casos de uso</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Agendar demo</a></li>
+        </ul>
+      </div>
+      <div class="col-2 footer__col">
+        <div class="footer__col-title">Empresa</div>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Carreiras</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2026 Sprint EaD · feito pra quem estuda em casa.</div>
+      <div class="footer__legal">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="#">LGPD</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SIGNUP MODAL -->
+<div class="signup-overlay" id="signupOverlay" hidden>
+  <div class="signup-overlay__backdrop" data-close-signup></div>
+  <div class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+    <div class="signup-modal__header">
+      <div class="signup-modal__header-row">
+        <div class="signup-modal__headline">
+          <span class="logo-mark logo-mark--sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 3 5 14h6l-1 7 9-11h-6l1-7z" fill="#fff" stroke="#fff" stroke-width="1" stroke-linejoin="round" /></svg>
+          </span>
+          <span id="signupTitle">Criar conta gratuita</span>
+        </div>
+        <button type="button" class="signup-modal__close" data-close-signup aria-label="Fechar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+        </button>
+      </div>
+
+      <div class="signup-stepper" id="signupStepper">
+        <div class="signup-step" data-step-indicator="0">
+          <span class="signup-step__circle">1</span><span class="signup-step__label">Conta</span>
+        </div>
+        <div class="signup-step__line"></div>
+        <div class="signup-step" data-step-indicator="1">
+          <span class="signup-step__circle">2</span><span class="signup-step__label">Curso</span>
+        </div>
+        <div class="signup-step__line"></div>
+        <div class="signup-step" data-step-indicator="2">
+          <span class="signup-step__circle">3</span><span class="signup-step__label">Disciplinas</span>
+        </div>
+        <div class="signup-step__line"></div>
+        <div class="signup-step" data-step-indicator="3">
+          <span class="signup-step__circle">4</span><span class="signup-step__label">Rotina</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup-body" id="signupBody">
+
+      <section class="signup-panel" data-panel="0">
+        <div class="signup-panel__head">
+          <h3>Vamos começar.</h3>
+          <p>Crie sua conta. Leva menos de um minuto.</p>
+        </div>
+        <label class="su-field">
+          <div class="su-field__label">Nome completo</div>
+          <input type="text" id="suNome" placeholder="Maria Silva" autocomplete="name" />
+        </label>
+        <label class="su-field">
+          <div class="su-field__label">E-mail</div>
+          <input type="email" id="suEmail" placeholder="voce@email.com" autocomplete="email" />
+        </label>
+        <label class="su-field">
+          <div class="su-field__label">Senha</div>
+          <input type="password" id="suSenha" placeholder="••••••••" autocomplete="new-password" />
+          <div class="su-field__hint">Mínimo de 6 caracteres.</div>
+        </label>
+      </section>
+
+      <section class="signup-panel" data-panel="1" hidden>
+        <div class="signup-panel__head">
+          <h3>Sobre o seu curso.</h3>
+          <p>Não sabe alguma informação? Pule e preencha depois.</p>
+        </div>
+        <label class="su-field">
+          <div class="su-field__label">Universidade</div>
+          <input type="text" id="suUniversidade" placeholder="Ex: UNINTER, Estácio, UNOPAR…" />
+        </label>
+        <label class="su-field">
+          <div class="su-field__label">Curso</div>
+          <input type="text" id="suCurso" placeholder="Ex: Pedagogia" />
+        </label>
+        <div class="su-field">
+          <div class="su-field__label">Período atual</div>
+          <div class="su-pills" id="suPeriodos">
+            <button type="button" class="su-pill is-active" data-periodo="1º">1º</button>
+            <button type="button" class="su-pill" data-periodo="2º">2º</button>
+            <button type="button" class="su-pill" data-periodo="3º">3º</button>
+            <button type="button" class="su-pill" data-periodo="4º">4º</button>
+            <button type="button" class="su-pill" data-periodo="5º">5º</button>
+            <button type="button" class="su-pill" data-periodo="6º+">6º+</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup-panel" data-panel="2" hidden>
+        <div class="signup-panel__head">
+          <h3>Suas disciplinas.</h3>
+          <p>Adicione as do semestre atual. Pode editar a qualquer momento.</p>
+        </div>
+        <div class="su-disciplinas" id="suDisciplinas"></div>
+        <button type="button" class="su-add" id="suAddDisciplina">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+          Adicionar disciplina
+        </button>
+      </section>
+
+      <section class="signup-panel" data-panel="3" hidden>
+        <div class="signup-panel__head">
+          <h3>Sua rotina de estudo.</h3>
+          <p>É com isso que a IA monta seu plano semanal.</p>
+        </div>
+        <div class="su-field">
+          <div class="su-field__label">Dias disponíveis</div>
+          <div class="su-days" id="suDias">
+            <button type="button" class="su-day is-active" data-day="SEG">SEG</button>
+            <button type="button" class="su-day is-active" data-day="TER">TER</button>
+            <button type="button" class="su-day" data-day="QUA">QUA</button>
+            <button type="button" class="su-day is-active" data-day="QUI">QUI</button>
+            <button type="button" class="su-day is-active" data-day="SEX">SEX</button>
+            <button type="button" class="su-day" data-day="SAB">SAB</button>
+            <button type="button" class="su-day" data-day="DOM">DOM</button>
+          </div>
+        </div>
+        <div class="su-field">
+          <div class="su-field__label">Horas por dia · <span id="suHorasLabel">1.5</span>h</div>
+          <input type="range" id="suHoras" min="0.5" max="6" step="0.5" value="1.5" />
+          <div class="su-range-ends"><span>30min</span><span>6h</span></div>
+        </div>
+        <div class="su-summary">
+          <span class="su-summary__icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3z" fill="currentColor" /></svg>
+          </span>
+          <span><b id="suDiasAtivos">4 dias</b> × <span id="suHorasInline">1.5</span>h = <b id="suTotalHoras">6.0h/semana</b> de estudo planejado.</span>
+        </div>
+      </section>
+
+      <section class="signup-panel signup-done" data-panel="done" hidden>
+        <div class="signup-done__icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </div>
+        <h3>Conta criada!</h3>
+        <p id="suDoneMsg">Seu teste de 14 dias começou. A IA já está montando seu primeiro plano semanal.</p>
+        <div class="su-resumo">
+          <div class="su-resumo__title">Resumo</div>
+          <div class="su-resumo__row"><span>Curso</span><span id="suResumoCurso">—</span></div>
+          <div class="su-resumo__row"><span>Disciplinas</span><span id="suResumoDisciplinas">definir depois</span></div>
+          <div class="su-resumo__row"><span>Rotina</span><span id="suResumoRotina">6.0h/semana</span></div>
+        </div>
+        <button type="button" class="btn btn--block btn--ink" data-close-signup>
+          Ir para meu painel
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+      </section>
+
+    </div>
+
+    <div class="signup-footer" id="signupFooter">
+      <button type="button" class="signup-footer__back" id="suBack">← Voltar</button>
+      <div class="signup-footer__right">
+        <button type="button" class="signup-footer__skip" id="suSkip" hidden>Preencher depois</button>
+        <button type="button" class="btn btn--primary" id="suNext">
+          <span id="suNextLabel">Continuar</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

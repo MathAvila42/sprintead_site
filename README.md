@@ -1,25 +1,29 @@
-# CODING AGENTS: READ THIS FIRST
+# Sprint EaD — Landing Page
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+Site de marketing estático (HTML/CSS/JS puro, sem build step) para o Sprint EaD, uma plataforma de autogestão acadêmica para estudantes de graduação EaD.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+A plataforma em si (dashboard, IA de planejamento, etc.) é desenvolvida em outro ambiente — este repositório contém **apenas o site institucional** com o fluxo de cadastro (wizard "Começar teste grátis").
 
-## What you should do — IMPORTANT
+## Estrutura
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+```
+index.html       página única (landing page + modal de cadastro)
+css/style.css     estilos (grid custom replicando Tailwind grid-12, design tokens via CSS vars)
+js/main.js        interações: marquee, FAQ accordion, wizard de cadastro multi-step
+assets/           imagens
+project/          referência de design original (prototype React/JSX gerado no Claude Design)
+```
 
-**Read `project/Sprint EaD - LP.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+## Rodando localmente
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+Como é só HTML/CSS/JS estático, basta servir a pasta com qualquer servidor estático:
 
-## About the design files
+```bash
+npx http-server -p 8080
+```
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+e abrir `http://localhost:8080/`.
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
+## Origem do design
 
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Sprint EaD - LP` project files (HTML prototypes, assets, components)
+O design final foi prototipado no Claude Design e está preservado em `project/` (`lp.jsx`, `signup.jsx`, `tweaks-panel.jsx`) como referência — não faz parte do site em produção.
