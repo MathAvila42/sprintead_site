@@ -11,7 +11,7 @@ index.html       página única (landing page + modal de cadastro)
 css/style.css     estilos (grid custom replicando Tailwind grid-12, design tokens via CSS vars)
 js/main.js        interações: marquee, FAQ accordion, wizard de cadastro multi-step
 assets/           imagens
-project/          referência de design original (prototype React/JSX gerado no Claude Design)
+design/           referência de design original (chat de design + prototype React/JSX gerado no Claude Design)
 ```
 
 ## Rodando localmente
@@ -26,4 +26,4 @@ e abrir `http://localhost:8080/`.
 
 ## Origem do design
 
-O design final foi prototipado no Claude Design e está preservado em `project/` (`lp.jsx`, `signup.jsx`, `tweaks-panel.jsx`) como referência — não faz parte do site em produção.
+O design final foi prototipado no Claude Design e está preservado em `design/` (chat de design em `design/chats/` e prototype React/JSX em `design/project/`: `lp.jsx`, `signup.jsx`, `tweaks-panel.jsx`) como referência — não faz parte do site em produção.
