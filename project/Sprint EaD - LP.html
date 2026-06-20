@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sprint EaD — Pare de se perder. Comece a executar.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+  :root {
+    --ink: #1a0f2e;
+    --ink-2: #2a1a4a;
+    --bg: #fdfaf6;
+    --bg-2: #f5efe6;
+    --orange: #ff6a1f;
+    --orange-2: #ff8a3d;
+    --orange-deep: #e85410;
+    --purple: #2a1260;
+    --purple-deep: #1a0a40;
+    --line: rgba(26, 15, 46, 0.10);
+  }
+  html, body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+  .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .text-ink { color: var(--ink); }
+  .text-ink-soft { color: rgba(26, 15, 46, 0.65); }
+  .text-ink-mute { color: rgba(26, 15, 46, 0.45); }
+  .bg-ink { background: var(--ink); }
+  .bg-purple { background: var(--purple); }
+  .bg-purple-deep { background: var(--purple-deep); }
+  .bg-orange { background: var(--orange); }
+  .bg-orange-deep { background: var(--orange-deep); }
+  .bg-paper { background: var(--bg); }
+  .bg-paper-2 { background: var(--bg-2); }
+  .border-line { border-color: var(--line); }
+  .text-orange { color: var(--orange); }
+
+  /* grid paper background */
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, rgba(26, 15, 46, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(26, 15, 46, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .grid-paper-dark {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+    will-change: transform;
+  }
+
+  /* pulse dot */
+  @keyframes softPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.92); }
+  }
+  .pulse-dot { animation: softPulse 1.8s ease-in-out infinite; }
+
+  /* Underline accent */
+  .underline-accent {
+    background-image: linear-gradient(transparent 65%, rgba(255, 106, 31, 0.35) 65%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 0.1em;
+  }
+
+  /* button shadow */
+  .btn-shadow {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05), 0 8px 24px -8px rgba(255, 106, 31, 0.5);
+  }
+  .btn-shadow:hover {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05), 0 12px 32px -8px rgba(255, 106, 31, 0.7);
+  }
+
+  /* ticker rows */
+  .row-tick { border-bottom: 1px solid var(--line); }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+
+  /* selection */
+  ::selection { background: var(--orange); color: white; }
+
+  /* hero background ornament */
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+
+  /* Phone frame */
+  .phone-frame {
+    border: 10px solid #141414;
+    border-radius: 32px;
+    background: #141414;
+    box-shadow: 0 30px 60px -20px rgba(26,15,46,0.35), 0 8px 20px -8px rgba(26,15,46,0.2);
+  }
+
+  /* Cards */
+  .card-elev {
+    box-shadow: 0 1px 0 rgba(26,15,46,0.04), 0 16px 40px -20px rgba(26,15,46,0.15);
+  }
+
+  /* dotted rule */
+  .dotted-rule {
+    background-image: radial-gradient(circle, rgba(26,15,46,0.25) 1px, transparent 1px);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    background-position: left center;
+    height: 1px;
+  }
+
+  /* step number */
+  .step-num {
+    font-feature-settings: "tnum", "ss01";
+    letter-spacing: -0.04em;
+  }
+
+  /* scroll hint */
+  @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
+  .bob { animation: bob 2s ease-in-out infinite; }
+
+  /* Faq chevron */
+  details[open] .chev { transform: rotate(45deg); }
+  .chev { transition: transform 0.2s ease; }
+
+  /* tag */
+  .tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 10px; border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500;
+    letter-spacing: 0.02em; text-transform: uppercase;
+    border: 1px solid var(--line); background: rgba(255,255,255,0.6);
+  }
+
+  /* Subtle tick chart */
+  .chart-bar { transition: height 0.6s cubic-bezier(.2,.7,.2,1); }
+</style>
+</head>
+
+<body class="antialiased">
+
+<div id="app"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="signup.jsx"></script>
+<script type="text/babel" src="lp.jsx"></script>
+
+</body>
+</html>
