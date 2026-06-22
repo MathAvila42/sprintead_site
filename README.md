@@ -27,3 +27,4 @@ e abrir `http://localhost:8080/`.
 ## Origem do design
 
 O design final foi prototipado no Claude Design e está preservado em `design/` (chat de design em `design/chats/` e prototype React/JSX em `design/project/`: `lp.jsx`, `signup.jsx`, `tweaks-panel.jsx`) como referência — não faz parte do site em produção.
+
