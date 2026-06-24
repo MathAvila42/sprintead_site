@@ -630,10 +630,31 @@ h1, h2, h3, p { margin: 0; }
    ========================================================= */
 .pricing__intro { max-width: 760px; }
 .pricing__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 520px; }
+.pricing__switch {
+  margin-top: 40px;
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(var(--ink-rgb), 0.06);
+  border: 1px solid var(--line);
+}
+.pricing__switch-btn {
+  border: none;
+  background: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(var(--ink-rgb), 0.55);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.pricing__switch-btn.is-active { background: var(--ink); color: #fff; }
 .pricing__grid { margin-top: 56px; display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 768px) {
   .pricing__grid { grid-template-columns: repeat(3, 1fr); }
 }
+.pricing__grid--institution { grid-template-columns: 1fr; max-width: 420px; }
 .price-card {
   position: relative;
   border-radius: 22px;
@@ -666,16 +687,13 @@ h1, h2, h3, p { margin: 0; }
 .price-card__currency { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: rgba(var(--ink-rgb), 0.45); }
 .price-card--highlight .price-card__currency { color: rgba(255, 255, 255, 0.5); }
 .price-card__amount { font-weight: 800; letter-spacing: -0.02em; font-size: 56px; line-height: 1; }
+.price-card__amount--text { font-size: 28px; }
 .price-card__period { font-size: 13px; color: rgba(var(--ink-rgb), 0.65); }
 .price-card--highlight .price-card__period { color: rgba(255, 255, 255, 0.6); }
 .price-card__features { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .price-card__features li { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; }
 .check-bullet--orange { width: auto; height: auto; background: none; color: var(--orange); margin-top: 2px; }
 .price-card .btn { margin-top: 32px; }
-
-.pricing__note { margin-top: 40px; text-align: center; font-size: 13px; color: rgba(var(--ink-rgb), 0.45); }
-.pricing__note a { text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; font-weight: 500; }
-.pricing__note a:hover { color: var(--ink); }
 
 /* =========================================================
    FAQ

@@ -211,4 +211,25 @@
 
   updateSummary();
   goToStep(0);
+
+  var pricingSwitch = document.querySelector(".pricing__switch");
+  if (pricingSwitch) {
+    var switchBtns = Array.prototype.slice.call(pricingSwitch.querySelectorAll("[data-pricing-target]"));
+    var pricingPanels = Array.prototype.slice.call(document.querySelectorAll("[data-pricing-panel]"));
+
+    pricingSwitch.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-pricing-target]");
+      if (!btn) return;
+      var target = btn.getAttribute("data-pricing-target");
+
+      switchBtns.forEach(function (b) {
+        var isActive = b === btn;
+        b.classList.toggle("is-active", isActive);
+        b.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+      pricingPanels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute("data-pricing-panel") !== target;
+      });
+    });
+  }
 })();

@@ -263,7 +263,12 @@
         <p class="pricing__lead">Comece com 14 dias grátis em qualquer plano. Sem cartão, cancele quando quiser.</p>
       </div>
 
-      <div class="pricing__grid">
+      <div class="pricing__switch" role="tablist" aria-label="Tipo de plano">
+        <button type="button" class="pricing__switch-btn is-active" data-pricing-target="student" role="tab" aria-selected="true">Aluno</button>
+        <button type="button" class="pricing__switch-btn" data-pricing-target="institution" role="tab" aria-selected="false">Instituição</button>
+      </div>
+
+      <div class="pricing__grid" data-pricing-panel="student">
         <article class="price-card">
           <h3 class="price-card__name">Básico</h3>
           <p class="price-card__pitch">Pra testar o hábito.</p>
@@ -307,7 +312,21 @@
         </article>
       </div>
 
-      <p class="pricing__note">Instituição de ensino? <a href="#">Fale com a gente</a> para plano institucional.</p>
+      <div class="pricing__grid pricing__grid--institution" data-pricing-panel="institution" hidden>
+        <article class="price-card price-card--institution">
+          <h3 class="price-card__name">Institucional</h3>
+          <p class="price-card__pitch">Pra faculdades e centros de EaD que querem reduzir a evasão.</p>
+          <div class="price-card__price"><span class="price-card__amount price-card__amount--text">Sob consulta</span></div>
+          <ul class="price-card__features">
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Painel de coordenação com visão de turmas</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Relatórios de engajamento e risco de evasão</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Provisionamento em massa de alunos</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Integração com o LMS da instituição</li>
+            <li><span class="check-bullet check-bullet--orange"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg></span>Suporte e onboarding dedicados</li>
+          </ul>
+          <button type="button" class="btn btn--block btn--primary" data-open-signup>Falar com vendas <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
+        </article>
+      </div>
     </div>
   </section>
 
