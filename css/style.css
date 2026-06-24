@@ -525,16 +525,21 @@ h1, h2, h3, p { margin: 0; }
   .problem__cards { grid-template-columns: repeat(3, 1fr); }
 }
 .pain-card--paired { display: flex; flex-direction: column; }
-.pain-card__divider { margin: 16px 0; border-top: 1px dashed rgba(var(--ink-rgb), 0.12); }
+.pain-card__divider { display: none; }
 .pain-card__resolve {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--orange);
   font-size: 14.5px;
-  color: var(--ink);
+  color: #fff;
   line-height: 1.6;
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.pain-card__resolve b { color: var(--orange); }
+.pain-card__resolve b { color: #fff; }
+.pain-card__resolve .check-bullet--orange { color: #fff; }
 .problem .features__hero { margin-top: 56px; }
 .pain-card {
   border-radius: 22px;
