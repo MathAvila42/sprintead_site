@@ -209,15 +209,16 @@ h1, h2, h3, p { margin: 0; }
 }
 .navbar__actions { display: flex; align-items: center; gap: 8px; }
 .navbar__login {
-  display: none;
+  display: inline;
   font-size: 14px;
   font-weight: 500;
   color: rgba(var(--ink-rgb), 0.65);
   padding: 8px 12px;
 }
 .navbar__login:hover { color: var(--ink); }
+.navbar__actions .btn--primary { display: none; }
 @media (min-width: 640px) {
-  .navbar__login { display: inline; }
+  .navbar__actions .btn--primary { display: inline-flex; }
 }
 
 /* =========================================================
