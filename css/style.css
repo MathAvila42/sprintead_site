@@ -504,8 +504,8 @@ h1, h2, h3, p { margin: 0; }
 /* =========================================================
    Section heading shared
    ========================================================= */
-.problem, .how, .features, .pricing, .faq { position: relative; border-bottom: 1px solid var(--line); }
-.problem, .features, .faq { background: var(--bg); }
+.problem, .how, .pricing, .faq { position: relative; border-bottom: 1px solid var(--line); }
+.problem, .faq { background: var(--bg); }
 .how, .pricing { background: var(--bg-2); }
 
 .problem__inner, .how__inner, .features__inner, .pricing__inner {
@@ -516,6 +516,7 @@ h1, h2, h3, p { margin: 0; }
 @media (min-width: 768px) {
   .problem__inner, .how__inner, .features__inner, .pricing__inner { padding: 112px 24px; }
 }
+.problem .features__inner { padding-top: 0; }
 .faq__inner { max-width: 1024px; margin: 0 auto; padding: 80px 24px; }
 @media (min-width: 768px) {
   .faq__inner { padding: 112px 24px; }
@@ -622,6 +623,10 @@ h1, h2, h3, p { margin: 0; }
    Features
    ========================================================= */
 .features__intro { max-width: 760px; }
+.problem .features__intro { margin-top: 24px; }
+@media (min-width: 768px) {
+  .problem .features__intro { margin-top: 40px; }
+}
 .features__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 560px; }
 .features__lead b { color: var(--ink); }
 
