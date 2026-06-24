@@ -436,29 +436,6 @@ h1, h2, h3, p { margin: 0; }
 }
 .preview-frame__dots span.is-orange { background: var(--orange); }
 
-.hero__stats {
-  margin-top: 64px;
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .hero__stats { grid-template-columns: repeat(3, 1fr); }
-}
-.hero__stat { padding: 20px; }
-@media (min-width: 768px) {
-  .hero__stat { padding: 24px; }
-}
-.hero__stat + .hero__stat { border-top: 1px solid var(--line); }
-@media (min-width: 768px) {
-  .hero__stat + .hero__stat { border-top: none; border-left: 1px solid var(--line); }
-}
-.hero__stat-big { font-weight: 800; letter-spacing: -0.02em; font-size: 30px; color: var(--ink); }
-.hero__stat-small { font-size: 12.5px; color: rgba(var(--ink-rgb), 0.65); margin-top: 4px; line-height: 1.4; }
-
 /* =========================================================
    Trust strip / marquee
    ========================================================= */
