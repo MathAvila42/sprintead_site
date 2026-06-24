@@ -527,24 +527,22 @@ h1, h2, h3, p { margin: 0; }
 .pain-card--paired { display: flex; flex-direction: column; }
 .pain-card__divider { display: none; }
 .pain-card__resolve {
-  margin-top: 16px;
-  padding: 16px;
-  border-radius: 14px;
+  margin: 16px -24px -24px;
+  padding: 16px 24px;
+  border-radius: 0 0 22px 22px;
   background: var(--orange);
   font-size: 14.5px;
   color: #fff;
   line-height: 1.6;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
 }
 .pain-card__resolve b { color: #fff; }
-.pain-card__resolve .check-bullet--orange { color: #fff; }
 .pain-card {
+  position: relative;
   border-radius: 22px;
   border: 1px solid var(--line);
   background: #fff;
   padding: 24px;
+  overflow: hidden;
   box-shadow: 0 1px 0 rgba(var(--ink-rgb), 0.04), 0 16px 40px -20px rgba(var(--ink-rgb), 0.15);
 }
 .pain-card__head { display: flex; align-items: flex-start; justify-content: space-between; }
