@@ -24,12 +24,12 @@ h1, h2, h3, p { margin: 0; }
   --bg: #fdfaf6;
   --bg-2: #f5efe6;
   --bg-2-rgb: 245, 239, 230;
-  --orange: #ff6a1f;
-  --orange-rgb: 255, 106, 31;
-  --orange-deep: #e85410;
-  --purple-deep: #1a0a40;
+  --orange: #1f4d45;
+  --orange-rgb: 31, 77, 69;
+  --orange-deep: #14352f;
+  --purple-deep: #1c3b35;
   --line: rgba(26, 15, 46, 0.10);
-  --blue: #2563eb;
+  --blue: #d9b88f;
 }
 
 .text-ink { color: var(--ink); }
