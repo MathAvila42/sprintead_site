@@ -655,6 +655,7 @@ h1, h2, h3, p { margin: 0; }
   .pricing__grid { grid-template-columns: repeat(3, 1fr); }
 }
 .pricing__grid--institution { grid-template-columns: 1fr; max-width: 420px; }
+.pricing__grid[hidden] { display: none; }
 .price-card {
   position: relative;
   border-radius: 22px;
