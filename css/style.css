@@ -508,21 +508,20 @@ h1, h2, h3, p { margin: 0; }
 .problem, .faq { background: var(--bg); }
 .how, .pricing { background: var(--bg-2); }
 
-.problem__inner, .how__inner, .features__inner, .pricing__inner {
+.problem__inner, .how__inner, .pricing__inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 24px;
 }
 @media (min-width: 768px) {
-  .problem__inner, .how__inner, .features__inner, .pricing__inner { padding: 112px 24px; }
+  .problem__inner, .how__inner, .pricing__inner { padding: 112px 24px; }
 }
-.problem .features__inner { padding-top: 0; }
 .faq__inner { max-width: 1024px; margin: 0 auto; padding: 80px 24px; }
 @media (min-width: 768px) {
   .faq__inner { padding: 112px 24px; }
 }
 
-.section-title, .problem__title, .how__title, .features__title, .pricing__title, .faq__title {
+.section-title, .problem__title, .how__title, .pricing__title, .faq__title {
   margin-top: 16px;
   font-weight: 900;
   letter-spacing: -0.03em;
@@ -531,19 +530,35 @@ h1, h2, h3, p { margin: 0; }
   color: var(--ink);
 }
 @media (min-width: 768px) {
-  .section-title, .problem__title, .how__title, .features__title, .pricing__title, .faq__title { font-size: 56px; }
+  .section-title, .problem__title, .how__title, .pricing__title, .faq__title { font-size: 56px; }
 }
 
 /* =========================================================
    Problem
    ========================================================= */
 .problem__title { color: var(--blue); }
-.problem__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 460px; }
+.problem__intro--full { max-width: 640px; }
+.problem__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 640px; }
 .problem__lead b { color: var(--ink); }
-.problem__cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.problem__cards { margin-top: 56px; display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 640px) {
-  .problem__cards { grid-template-columns: 1fr 1fr; }
+  .problem__cards { grid-template-columns: repeat(2, 1fr); }
 }
+@media (min-width: 1024px) {
+  .problem__cards { grid-template-columns: repeat(3, 1fr); }
+}
+.pain-card--paired { display: flex; flex-direction: column; }
+.pain-card__divider { margin: 16px 0; border-top: 1px dashed rgba(var(--ink-rgb), 0.12); }
+.pain-card__resolve {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.pain-card__resolve b { color: var(--orange); }
+.problem .features__hero { margin-top: 56px; }
 .pain-card {
   border-radius: 22px;
   border: 1px solid var(--line);
@@ -622,14 +637,6 @@ h1, h2, h3, p { margin: 0; }
 /* =========================================================
    Features
    ========================================================= */
-.features__intro { max-width: 760px; }
-.problem .features__intro { margin-top: 24px; }
-@media (min-width: 768px) {
-  .problem .features__intro { margin-top: 40px; }
-}
-.features__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 560px; }
-.features__lead b { color: var(--ink); }
-
 .features__hero {
   margin-top: 56px;
   position: relative;
@@ -669,8 +676,6 @@ h1, h2, h3, p { margin: 0; }
   .features__hero-title { font-size: 44px; }
 }
 .features__hero-text { margin-top: 20px; font-size: 15.5px; color: rgba(255, 255, 255, 0.7); line-height: 1.6; max-width: 420px; }
-.features__hero-list { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
-.features__hero-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14.5px; color: rgba(255, 255, 255, 0.85); }
 .check-bullet {
   width: 20px;
   height: 20px;
