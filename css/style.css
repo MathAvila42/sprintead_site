@@ -19,17 +19,18 @@ h1, h2, h3, p { margin: 0; }
 ::selection { background: var(--orange); color: #fff; }
 
 :root {
-  --ink: #1a0f2e;
-  --ink-rgb: 26, 15, 46;
-  --bg: #fdfaf6;
-  --bg-2: #f5efe6;
-  --bg-2-rgb: 245, 239, 230;
-  --orange: #1f4d45;
-  --orange-rgb: 31, 77, 69;
-  --orange-deep: #14352f;
-  --purple-deep: #1c3b35;
-  --line: rgba(26, 15, 46, 0.10);
-  --blue: #d9b88f;
+  --ink: #2c2c2c;
+  --ink-rgb: 44, 44, 44;
+  --bg: #f5f0e8;
+  --bg-2: #ede8df;
+  --bg-2-rgb: 237, 232, 223;
+  --orange: #e63c2e;
+  --orange-rgb: 230, 60, 46;
+  --orange-deep: #c4281c;
+  --purple-deep: #c4281c;
+  --line: rgba(44, 44, 44, 0.12);
+  --blue: #3278b5;
+  --teal: #35a882;
 }
 
 .text-ink { color: var(--ink); }
@@ -418,7 +419,7 @@ h1, h2, h3, p { margin: 0; }
   margin: 16px -24px -24px;
   padding: 16px 24px;
   border-radius: 0 0 22px 22px;
-  background: var(--orange);
+  background: var(--teal);
   font-size: 14.5px;
   color: #fff;
   line-height: 1.6;
