@@ -388,24 +388,24 @@ h1, h2, h3, p { margin: 0; }
 /* =========================================================
    Section heading shared
    ========================================================= */
-.how, .pricing, .faq { position: relative; border-bottom: 1px solid var(--line); }
-.faq { background: var(--bg); }
+.problem, .how, .pricing, .faq { position: relative; border-bottom: 1px solid var(--line); }
+.problem, .faq { background: var(--bg); }
 .how, .pricing { background: var(--bg-2); }
 
-.how__inner, .pricing__inner {
+.problem__inner, .how__inner, .pricing__inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 24px;
 }
 @media (min-width: 768px) {
-  .how__inner, .pricing__inner { padding: 112px 24px; }
+  .problem__inner, .how__inner, .pricing__inner { padding: 112px 24px; }
 }
 .faq__inner { max-width: 1024px; margin: 0 auto; padding: 80px 24px; }
 @media (min-width: 768px) {
   .faq__inner { padding: 112px 24px; }
 }
 
-.section-title, .how__title, .pricing__title, .faq__title {
+.section-title, .problem__title, .how__title, .pricing__title, .faq__title {
   margin-top: 16px;
   font-weight: 900;
   letter-spacing: -0.03em;
@@ -414,8 +414,48 @@ h1, h2, h3, p { margin: 0; }
   color: var(--ink);
 }
 @media (min-width: 768px) {
-  .section-title, .how__title, .pricing__title, .faq__title { font-size: 56px; }
+  .section-title, .problem__title, .how__title, .pricing__title, .faq__title { font-size: 56px; }
 }
+
+/* =========================================================
+   Problem
+   ========================================================= */
+.problem__title { color: var(--blue); }
+.problem__intro--full { max-width: 640px; }
+.problem__lead { margin-top: 24px; font-size: 17px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; max-width: 640px; }
+.problem__lead b { color: var(--ink); }
+.problem__cards { margin-top: 56px; display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 640px) {
+  .problem__cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .problem__cards { grid-template-columns: repeat(3, 1fr); }
+}
+.pain-card--paired { display: flex; flex-direction: column; }
+.pain-card__divider { display: none; }
+.pain-card__resolve {
+  margin: 16px -24px -24px;
+  padding: 16px 24px;
+  border-radius: 0 0 22px 22px;
+  background: var(--orange);
+  font-size: 14.5px;
+  color: #fff;
+  line-height: 1.6;
+}
+.pain-card__resolve b { color: #fff; }
+.pain-card {
+  position: relative;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 24px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(var(--ink-rgb), 0.04), 0 16px 40px -20px rgba(var(--ink-rgb), 0.15);
+}
+.pain-card__head { display: flex; align-items: flex-start; justify-content: space-between; }
+.pain-card__num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(var(--ink-rgb), 0.45); }
+.pain-card__title { margin-top: 16px; font-weight: 700; font-size: 20px; color: var(--ink); letter-spacing: -0.01em; }
+.pain-card__body { margin-top: 8px; font-size: 14.5px; color: rgba(var(--ink-rgb), 0.65); line-height: 1.6; }
 
 /* =========================================================
    How it works
