@@ -50,41 +50,25 @@
     <div class="hero-orb hero-orb--b" aria-hidden="true"></div>
 
     <div class="hero__inner">
-      <div class="grid-12 hero__grid">
-        <div class="col-7 hero__copy">
-          <div class="hero__tags">
-            <span class="tag tag--orange"><span class="pulse-dot"></span>Semestre 2026/1</span>
-          </div>
-
-          <h1 class="hero__title">Abra. Veja. Estude.</h1>
-
-          <p class="hero__lead">O Sprint EaD mostra <b>o que estudar em cada dia</b>, com base nas suas disciplinas e no tempo que você tem disponível.</p>
-
-          <div class="hero__cta">
-            <button type="button" class="btn btn--primary btn--lg" data-open-signup>
-              <span>Comece agora</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            </button>
-            <a href="#como-funciona" class="hero__secondary-link">
-              Veja como funciona
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            </a>
-          </div>
-
+      <div class="hero__copy">
+        <div class="hero__tags">
+          <span class="tag tag--orange"><span class="pulse-dot"></span>Semestre 2026/1</span>
         </div>
-
-        <div class="col-5 hero__preview-col">
-          <div class="preview">
-            <div class="preview-frame">
-              <div class="preview-frame__inner">
-                <img src="assets/dashboard.png" alt="Dashboard do Sprint EaD" />
-              </div>
-              <div class="preview-frame__dots">
-                <span></span><span></span><span class="is-orange"></span>
-              </div>
-            </div>
-          </div>
+        <h1 class="hero__title">Abra. Veja. Estude.</h1>
+        <p class="hero__lead">O Sprint EaD mostra <b>o que estudar em cada dia</b>, com base nas suas disciplinas e no tempo que você tem disponível.</p>
+        <div class="hero__cta">
+          <button type="button" class="btn btn--primary btn--lg" data-open-signup>
+            <span>Comece agora</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <a href="#como-funciona" class="hero__secondary-link">
+            Veja como funciona
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </a>
         </div>
+      </div>
+      <div class="hero__screenshot">
+        <img src="assets/dashboard.png" alt="Dashboard do Sprint EaD" />
       </div>
     </div>
   </section>
@@ -165,65 +149,62 @@
   </section>
 
   <!-- COMO FUNCIONA -->
-  <section class="how" id="como-funciona">
-    <div class="how__inner">
-      <div class="how__head">
+  <section class="features" id="como-funciona">
+    <div class="features__inner">
+
+      <div class="features__head">
         <span class="tag tag--dark">Como funciona</span>
-        <h2 class="how__title">Currículo entra,<br />rotina sai.</h2>
+        <h2 class="features__title">Currículo entra,<br />rotina sai.</h2>
       </div>
 
-      <div class="how__timeline">
-        <div class="how__rule" aria-hidden="true"></div>
-        <div class="grid-12 how__steps">
-          <div class="col-4 how-step">
-            <div class="how-step__head">
-              <span class="how-step__circle">01</span>
-              <span class="how-step__label">Cadastro</span>
-            </div>
-            <h3 class="how-step__title">Cadastro</h3>
-            <p class="how-step__body">O aluno faz o cadastro e informa curso, universidade, disciplinas, módulos e avaliações. Caso não saiba alguma informação, pode cadastrar depois e mesmo assim gerar o plano.</p>
-            <div class="how-step__sample">
-              <div class="mono-line is-mute">// detectado</div>
-              <div class="mono-line">6 disciplinas · 39 módulos</div>
-              <div class="mono-line">3 avaliações · 2 TCCs</div>
-              <div class="mono-line is-orange">✓ plano gerável</div>
-            </div>
-          </div>
-
-          <div class="col-4 how-step">
-            <div class="how-step__head">
-              <span class="how-step__circle">02</span>
-              <span class="how-step__label">Plano</span>
-            </div>
-            <h3 class="how-step__title">IA monta sua semana</h3>
-            <p class="how-step__body">Você diz quanto tempo por dia pode estudar. O Sprint distribui os módulos, respeita prazos e deixa folga para revisão.</p>
-            <div class="how-step__sample how-step__sample--plan">
-              <div class="plan-row"><span class="is-mute">01</span><span>SEG · 45min · Comunic. M4</span></div>
-              <div class="plan-row"><span class="is-mute">02</span><span>TER · 45min · Filos. M3</span></div>
-              <div class="plan-row"><span class="is-mute">03</span><span>QUA · DESCANSO</span></div>
-              <div class="plan-row"><span class="is-mute">04</span><span>QUI · 60min · AP1 review</span></div>
-              <div class="plan-row"><span class="is-mute">05</span><span>SEX · 45min · Didática M2</span></div>
-            </div>
-          </div>
-
-          <div class="col-4 how-step">
-            <div class="how-step__head">
-              <span class="how-step__circle">03</span>
-              <span class="how-step__label">Execução</span>
-            </div>
-            <h3 class="how-step__title">Você só executa</h3>
-            <p class="how-step__body">Abre o app, vê UMA coisa pra estudar hoje. Marca concluído. Streak. Próximo. Sem decisões.</p>
-            <div class="how-step__sample">
-              <div class="mono-line is-mute" style="margin-bottom:8px">AGORA</div>
-              <div class="now-card">
-                <div class="now-card__meta">MÓDULO 4 · 45MIN</div>
-                <div class="now-card__title">Comunicação e Linguagem</div>
-                <div class="now-card__btn">Começar ▶</div>
-              </div>
-            </div>
+      <div class="feature-row">
+        <div class="feature-row__copy">
+          <span class="feature-row__num">01</span>
+          <h3 class="feature-row__title">Cadastre seu curso</h3>
+          <p class="feature-row__body">Informe suas disciplinas, módulos e avaliações. Se não tiver todos os dados agora, pode completar depois — o Sprint já gera o plano com o que você tem.</p>
+        </div>
+        <div class="feature-row__visual">
+          <div class="feature-code">
+            <div class="feature-code__line is-mute">// detectado</div>
+            <div class="feature-code__line">6 disciplinas · 39 módulos</div>
+            <div class="feature-code__line">3 avaliações · 2 TCCs</div>
+            <div class="feature-code__line is-green">✓ plano gerável</div>
           </div>
         </div>
       </div>
+
+      <div class="feature-row feature-row--flip">
+        <div class="feature-row__copy">
+          <span class="feature-row__num">02</span>
+          <h3 class="feature-row__title">IA monta sua semana</h3>
+          <p class="feature-row__body">Você diz quanto tempo por dia pode estudar. O Sprint distribui os módulos, respeita prazos e deixa folga para revisão.</p>
+        </div>
+        <div class="feature-row__visual">
+          <div class="feature-code">
+            <div class="feature-code__row"><span class="is-mute">01</span><span>SEG · 45min · Comunic. M4</span></div>
+            <div class="feature-code__row"><span class="is-mute">02</span><span>TER · 45min · Filos. M3</span></div>
+            <div class="feature-code__row"><span class="is-mute">03</span><span>QUA · DESCANSO</span></div>
+            <div class="feature-code__row"><span class="is-mute">04</span><span>QUI · 60min · AP1 review</span></div>
+            <div class="feature-code__row"><span class="is-mute">05</span><span>SEX · 45min · Didática M2</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-row__copy">
+          <span class="feature-row__num">03</span>
+          <h3 class="feature-row__title">Você só executa</h3>
+          <p class="feature-row__body">Abre o app, vê UMA coisa pra estudar hoje. Marca concluído. Streak. Próximo. Sem decisões.</p>
+        </div>
+        <div class="feature-row__visual">
+          <div class="feature-now">
+            <div class="feature-now__meta">HOJE · Didática e Prática · Módulo 2</div>
+            <div class="feature-now__title">Fundamentos do planejamento</div>
+            <div class="feature-now__btn">Abrir módulo →</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
